@@ -13,6 +13,7 @@ public class PizzaOrderer{
     PizzaCommand deepDish = new DeepDishCommand(order);
     PizzaCommand thinCrust = new ThinCrustCommand(order);
     PizzaCommand jackson = new JacksonCommand(order);
+    PizzaCommand sohail = new SohailCommand(order);
 
     // Order a deep Dish pizza
     control.setCommand(deepDish);
