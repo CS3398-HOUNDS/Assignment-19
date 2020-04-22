@@ -30,6 +30,7 @@ public class PizzaOrderer{
 
     // Order a Trevor pizza
     control.setCommand(trevor);
+    control.submitOrder();
 
     // Order a Sohail pizza
     control.setCommand(sohail);

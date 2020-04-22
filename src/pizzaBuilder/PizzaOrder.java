@@ -48,7 +48,7 @@ public class PizzaOrder{
 
   private void reportOrder() {
       System.out.format("\nBuilt %s - num pies: %d, pepperoni: %b, onion: %b, frenchfries %b\n",
-    	p.getName(),
+      p.getName(),
       p.getNumber(),
       p.toppings.pepperoni,
       p.toppings.onion,
