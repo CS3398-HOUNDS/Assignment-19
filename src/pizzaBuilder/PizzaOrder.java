@@ -12,22 +12,29 @@ public class PizzaOrder{
   public Pizza p;
 
   public void bakeDeepDish(){
-	System.out.format("Baking a deepdish... \n"); 
-    pb = new Pizza.Builder("Deep Dish"); 
+	System.out.format("Baking a deepdish... \n");
+    pb = new Pizza.Builder("Deep Dish");
     p = pb.pizzas(1).build();
     reportOrder();
 
   }
   public void bakeThinCrust(){
   	System.out.format("Baking a thincrust... \n");
-  	pb = new Pizza.Builder("Thin Crust");  
+  	pb = new Pizza.Builder("Thin Crust");
+    p = pb.pizzas(1).build();
+    reportOrder();
+  }
+
+  public void bakeJacksonPizza(){
+    System.out.format("Baking delicious Jackson Pizza... \n");
+    pb = new Pizza.Builder("Jackson Pizza");
     p = pb.pizzas(1).build();
     reportOrder();
   }
 
   private void reportOrder() {
-      System.out.format("\nBuilt %s - num pies: %d, pepperoni: %b, onion: %b, frenchfries %b\n", 
-    	p.getName(),  
+      System.out.format("\nBuilt %s - num pies: %d, pepperoni: %b, onion: %b, frenchfries %b\n",
+    	p.getName(),
       p.getNumber(),
       p.toppings.pepperoni,
       p.toppings.onion,
