@@ -26,5 +26,9 @@ public class PizzaOrderer{
     // Order a Jackson pizza
     control.setCommand(jackson);
     control.submitOrder();
+
+        // Order a Sohail pizza
+    control.setCommand(sohail);
+    control.submitOrder();
   }
 }
