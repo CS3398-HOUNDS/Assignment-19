@@ -32,9 +32,15 @@ public class PizzaOrder{
     reportOrder();
   }
 
+<<<<<<< HEAD
   public void bakeTrevorPizza(){
     System.out.format("Baking a nice Trevor Pizza... \n");
     pb = new Pizza.Builder("Trevor Pizza");
+=======
+    public void bakeSohailPizza(){
+    System.out.format("Baking the stupendously satisfying Sohail Pizza... \n");
+    pb = new Pizza.Builder("Sohail Pizza");
+>>>>>>> refs/remotes/origin/master
     p = pb.pizzas(1).build();
     reportOrder();
   }
