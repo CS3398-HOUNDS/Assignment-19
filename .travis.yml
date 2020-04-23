@@ -16,12 +16,12 @@ script:
   - ant compile
   - ant jar
   - ant run
-
+  - travis encrypt --pro
 
 deploy:
   provider: releases
   api_key:
-    secure: $GITPERM
+    secure:
   skip_cleanup: true
   on:
     tags: false
