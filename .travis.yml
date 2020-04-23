@@ -21,7 +21,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: $GITPERM
+    secure: git@github.com/CS3398-HOUNDS/Assignment-19
   skip_cleanup: true
   on:
     tags: false
